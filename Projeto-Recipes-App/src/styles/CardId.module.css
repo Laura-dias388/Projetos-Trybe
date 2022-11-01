@@ -1,0 +1,73 @@
+.cardIdContainer {
+  width: 700px;
+}
+
+.cardIdContainerImg {
+  height: 700px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.cardIdWrapper {
+  background-color: var(--white);
+  border-radius: 4rem;
+  width: 100%;
+
+  /* position:relative;
+  z-index:1;
+  top: -10rem; */
+
+}
+
+.cardIdWrapper:before {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  content: '';
+  height: 10px;
+  left: 0;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  z-index: 100;
+}
+
+.cardIdWrapperContainer {
+  padding: 4rem;
+}
+
+.cardIdWrapper h2 {
+  font-family: Poppins , sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.recomendationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: 230px;
+  margin: 10px 0;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding: 0 2rem;
+  width: 450px;
+}
+
+.recomendationItems {
+  gap: 2rem;
+}
+
+.recomendationImg {
+  max-width: 12rem;
+}
+
+.stickyButton {
+  bottom: 0;
+  margin: 2rem;
+  position: fixed;
+}
+
+.styckyButtonDisabled {
+  display: none;
+}

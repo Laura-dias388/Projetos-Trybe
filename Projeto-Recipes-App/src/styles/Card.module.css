@@ -1,0 +1,45 @@
+.cardContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardContainer img {
+  height: 180px;
+  width: 180px;
+}
+
+.cardContainer span {
+  color: var(--white);
+  display: block;
+  font-family: Poppins , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.cardContent {
+  background-image: var(--gradient);
+  bottom: 0;
+  left: 0;
+  padding: 7rem 1rem 1rem;
+  position: absolute;
+  right: 0;
+  width: 180px;
+}
+
+@media ( max-width : 400px ) {
+
+  .cardContainer img {
+    height: 200px;
+    object-fit: cover;
+    width: 300px;
+
+  }
+
+  .cardContent {
+    width: 300px;
+  }
+}
